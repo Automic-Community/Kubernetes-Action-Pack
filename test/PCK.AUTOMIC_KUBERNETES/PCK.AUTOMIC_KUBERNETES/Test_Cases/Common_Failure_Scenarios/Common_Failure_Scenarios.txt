@@ -46,7 +46,7 @@ Startup
 Common Failure Scenarios
     [Arguments]    ${OK_NOK}    ${ServerURL}    ${Username}    ${Password}    ${KubeConfigPath}    ${KubeConfigContext}
     ...    ${Cluster}    ${SkipTLSVerification}    ${ClientCertificatePath}    ${FileLocation}    ${AdvancedOptioms}
-    [Documentation]    This test executes the common failure scenarios for action pack with List Subsystems action
+    [Documentation]    This test executes the common failure scenarios for action pack with Create Resource action
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK/FAULT_OTHER. Value of this variable should be OK, NOK.
     ...    -${ServerURL}: This field specifies address and port of the Kubernetes server.
     ...    -${Username}: This field specifies Username used for Kubernetes connections.
