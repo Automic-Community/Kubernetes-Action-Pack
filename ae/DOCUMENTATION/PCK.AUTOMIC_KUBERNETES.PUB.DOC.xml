@@ -36,7 +36,8 @@ Client Certificate Path:                        Specify path to a client certifi
 =Actions=
 Following actions are supported.
 
-]]></DOC>
+* Action Name:  PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
+* Action description: This action will fetch resource(s) in Kubernetes according to type and filters.]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>
