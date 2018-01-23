@@ -27,14 +27,18 @@ PCK.AUTOMIC_KUBERNETES.PUB.VARA.PACKAGE_PARAMETERS
 Server URL:                                      Specify address and port of the Kubernetes server E.g. https://192.168.41.155:6443
 Username:                                       Username used for Kubernetes connections. E.g. Admin
 Password:                                          Password used for Kubernetes connections. 
-Kube Config Path:                             Specify path to the kubeconfig file to use for CLI requests. E.g. /home/username/.kube/config
+Kube Config Path:                             Specify the path to the kubeconfig file to use for CLI requests. E.g. /home/username/.kube/config
 Kube Config Context:                         Specify the name of the kubeconfig context to use. E.g. minikube
 Cluster:                                               Specify the name of the kubeconfig cluster to use. E.g. kubernetes
 Skip TLS Verification:                         If Yes, the server's certificate will not be checked for validity. E.g. Yes, No
-Client Certificate Path:                        Specify path to a client certificate file for the certificate authority. E.g. /home/username/kubernetes/ca.cert
+Client Certificate Path:                        Specify the path to a client certificate file for the certificate authority. E.g. /home/username/kubernetes/ca.cert
 
 =Actions=
 Following actions are supported.
+
+* Action Name: PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE
+* Action Description:  This action deletes the resource in Kubernetes.
+
 
 ]]></DOC>
 </DOCU_Docu>
