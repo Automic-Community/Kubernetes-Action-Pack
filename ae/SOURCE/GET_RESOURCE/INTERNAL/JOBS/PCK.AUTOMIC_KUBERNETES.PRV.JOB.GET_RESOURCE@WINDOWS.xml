@@ -179,7 +179,7 @@
 :  SET &UC4RB_CMD# = STR_CAT(&UC4RB_CMD#," --field-selector &UC4RB_ESCAPED_STRING#")
 : ENDIF
 
-! Sort By
+! Other Filtering
 : IF &UC4RB_K8S_OTHER_FIL# <> ""
 :     SET &UC4RB_CMD# = STR_CAT(&UC4RB_CMD#," &UC4RB_K8S_OTHER_FIL#")
 : ENDIF

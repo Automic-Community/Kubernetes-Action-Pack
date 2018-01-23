@@ -457,7 +457,7 @@ PCK.AUTOMIC_CA_VERACODE.PUB.ACTION.GET_RESOURCE
 * When non-existing Resource type is provided.
 
 = Inputs =
-* Resource Type:                      Specify the type of the resources to get. E.g. Pods
+* Resource Type*:                      Specify the type of the resources to get. E.g. Pods
 * Sort By:                                   Specify the order of sorting. E.g. .status.containerStatuses[0].restartCount	
 * Selector:                                  Specify selectors to list only matching resources. E.g. app=spartan	
 * Field Selector:                         Specify field specific selectors to list only matching resources. E.g. status.phase=Running
