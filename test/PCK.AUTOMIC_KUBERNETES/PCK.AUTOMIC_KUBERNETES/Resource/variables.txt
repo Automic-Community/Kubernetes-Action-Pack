@@ -6,7 +6,7 @@ Resource          ../../../Env/default.txt
 #----Global Variables----------------------------------------------------------------------------------------
 ${Server_URL}     https://192.168.41.155:6443
 ${User_Name}      Admin
-${Kubernetes_Password}    https://192.168.41.155:6443
+${Kubernetes_Password}    Passw0rd
 ${Kube_Config_Path}    /home/username/.kube/config
 ${Kube_Config_Context}    minikube
 ${Kube_Cluster}    kubernetes
