@@ -443,7 +443,7 @@ This action creates the resource(s) in Kubernetes.
 * If the resource that we are creating, is already present.
 
 = Inputs =
-* File Location: 						Provide YAML file including full path.. E.g. ./my-manifest.yaml
+* File Location*: 						Provide YAML file including full path.. E.g. ./my-manifest.yaml
 * Advanced Options:					Provide other options which will be used during resource creation. E.g. -o json
 
 = Behavior =
