@@ -36,7 +36,8 @@ Client Certificate Path:                        Specify path to a client certifi
 =Actions=
 Following actions are supported.
 
-]]></DOC>
+Action Name: PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY_RESOURCE
+Action Description: This action applies a configuration change to a resource.]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>
