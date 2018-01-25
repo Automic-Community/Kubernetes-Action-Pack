@@ -12,5 +12,6 @@ ${Kube_Config_Context}    minikube
 ${Kube_Cluster}    kubernetes
 ${Client_Certificate_Path}    /home/username/kubernetes/ca.cert
 #----Create Resource----------------------------------------------------------------------------------------
-${File_Locatiom}    C:\deployment.yaml
-${Advanced_Options}    --dry-run false
+${File_Location}    C:\deployment.yaml
+${Advanced_Options}    --dry-run=false
+>>>>>>> develop

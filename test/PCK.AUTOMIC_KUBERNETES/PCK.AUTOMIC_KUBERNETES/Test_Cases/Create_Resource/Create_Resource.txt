@@ -14,7 +14,8 @@ Resource          ../../Resources/actions.txt
 *** Test Cases ***    OK_NOK    FileLocation                  AdvancedOptions
 Create Resource with valid File Location and not giving Advanced Options
                       [Tags]    main_scenarios
-                      OK        ${File_Locatiom}              ${EMPTY}
+
+                      OK        ${File_Location}              ${EMPTY}
 
 Create Resource with valid File Location and giving Advanced Options
                       OK        C:\\My New Deployment.YAML    ${Advanced_Options}
@@ -23,7 +24,9 @@ Create Resource with Invalid File Location
                       NOK       Invalid                       ${Advanced_Options}
 
 Create Resource with Invalid Advanced Options
-                      NOK       ${File_Locatiom}              Invalid
+
+
+                      NOK       ${File_Location}              Invalid
 
 Assert File Location as mandatory field
                       NOK       ${EMPTY}                      ${Advanced_Options}

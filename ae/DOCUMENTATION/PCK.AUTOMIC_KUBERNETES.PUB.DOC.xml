@@ -38,8 +38,12 @@ Following actions are supported.
 * Action Name: PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE
 * Action Description:  This action deletes the resource in Kubernetes.
 
+* Action name:  PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE
+* Action Description: This action creates resource(s) in Kubernetes.
 
-]]></DOC>
+* Action Name:  PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
+* Action description: This action will fetch resource(s) in Kubernetes according to type and filters.]]></DOC>
+
 </DOCU_Docu>
 </DOCU>
 </uc-export>
