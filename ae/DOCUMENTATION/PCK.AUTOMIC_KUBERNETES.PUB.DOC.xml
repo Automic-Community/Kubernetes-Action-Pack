@@ -35,8 +35,8 @@ Kubernetes is an open-source system for managing containerized applications. It 
 =Actions=
 Following actions are supported.
 
-Action Name: PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY_RESOURCE
-Action Description: This action applies a configuration change to a resource.]]></DOC>
+Action Name: PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY
+Action Description: This action applies configuration changes to a resource.]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>

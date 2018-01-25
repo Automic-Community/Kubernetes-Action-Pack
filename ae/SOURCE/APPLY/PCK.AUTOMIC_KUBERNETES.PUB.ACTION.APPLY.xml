@@ -433,18 +433,17 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name = 
-PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY_RESOURCE
+PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY
 
 = General description = 
-This action applies a configuration change to a resource.
+This action applies configuration changes to a resource.
 
 = Failure Conditions = 
 * If the user tries to provide invalid file location. 
 
-
- = Inputs = 
-- File Location*:                      Provide YAML file including full path.. E.g. ./my-manifest.yaml 
-- Advanced Options:              Provide other options which will be used during resource creation. E.g. --record 
+= Inputs = 
+- File Location*:                Provide YAML file including full path.. E.g. ./my-manifest.yaml 
+- Advanced Options:              Provide other options which will be used during command execution. E.g. --record 
 
 = Behavior = 
 * If the user tries to update a non-existing resource, it will create a new resource. 
@@ -463,13 +462,13 @@ This action applies a configuration change to a resource.
 AE logs will be displayed in the AE report. 
 
 = Example = 
-* File Location:                      ./deployment.yaml 
+* File Location:                ./deployment.yaml 
 * Advanced Options:             --record
 
-=Sample Command= 
+= Sample Command = 
 kubectl apply -f  "./deployment.yaml" 
 
- =Sample YAML= 
+ = Sample YAML = 
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
