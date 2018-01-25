@@ -61,7 +61,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -141,7 +141,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -221,7 +221,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -288,7 +288,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -383,7 +383,7 @@
 <UC4RB_K8S_CLUSTERs.00 altview="0" haslist="0"/>
 <UC4RB_K8S_BASE_URLs.00 altview="0" haslist="0"/>
 <UC4RB_K8S_USERNAMEs.00 altview="0" haslist="0"/>
-<UC4RB_K8S_PASSWORDs.00 altview="0" haslist="0">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 altview="0" haslist="0">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_CERT_PATHs.00 altview="0" haslist="0"/>
 </PRPTBOX>
@@ -447,9 +447,9 @@ This action deletes the resource in Kubernetes.
 * If the user provides a resource name that does not exist or already deleted.
 
 = Inputs =
-* Resource Type*:               Provide the name of the team you are creating. It is case sensitive. E.g. nodes
-* Resource Name*:             Provide usernames of members in comma separated manner. E.g. Spartan
-* Other options:                  Specify any kind of options which can be passing into the command. E.g. --include-uninitialized
+- Resource Type*:               Provide the name of the team you are creating. It is case sensitive. E.g. nodes
+- Resource Name*:               Provide usernames of members in comma separated manner. E.g. Spartan
+- Other options:                Specify any kind of options which can be passing into the command. E.g. --include-uninitialized
 
 = Behavior =
 (none)
@@ -468,9 +468,12 @@ This action deletes the resource in Kubernetes.
 AE logs will be displayed in the AE report.
 
 = Example =
-* Resource Type*:              nodes
-* Resource Name*:            Spartan
-* Other options:                  --include-uninitialized
+- Resource Type:              nodes
+- Resource Name:             Spartan
+- Other options:             --include-uninitialized
+
+=Sample Command=
+kubectl delete service service1 
 ]]></DOC>
 </DOCU_Docu>
 </JOBP>
