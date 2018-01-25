@@ -14,7 +14,7 @@ Resource          ../../Resources/actions.txt
 *** Test Cases ***    OK_NOK    ResourceType      ResourceName         Otheroptions
 Delete Resource with valid Resource Type , Resource name and not giving other options
                       [Tags]    main_scenarios
-                      OK        Services          nginx-deployment     ${EMPTY}
+                      OK        Services          nginx-service        ${EMPTY}
 
 Delete Resource with valid Resource Type , Resource name and giving other options
                       OK        deployment        nginx-deployment     --timeout=0s
@@ -60,6 +60,7 @@ Delete Resource Template
     Run Keyword If    '${Otheroptions}' == 'Invalid'    Action Set    &UC4RB_K8S_OTHER_OPTS#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_K8S_OTHER_OPTS#    ${Otheroptions}
     Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE IF    '${OK_NOK}' == 'NOK'    Assert Failure
 
 Teardown
     Log    *******End Test "DELETE RESOURCE"*******
