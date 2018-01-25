@@ -467,7 +467,7 @@ PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
 (none)
 
 =Return Value=
- &UC4RB_K8S_RES_LIST#:              List of resources available.
+ (none)
 
 = Outputs =
 * Return code is 0 in case of success.

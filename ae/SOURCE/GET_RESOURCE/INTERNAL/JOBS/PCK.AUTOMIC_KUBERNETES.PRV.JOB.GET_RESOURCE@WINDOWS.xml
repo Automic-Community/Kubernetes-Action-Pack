@@ -187,24 +187,6 @@
 : PRINT "Command executed :: &UC4RB_CMD#"
 
 &UC4RB_CMD#
-IF %ERRORLEVEL% NEQ 0 (
-  echo "Please verify the inputs provided."
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR
-  exit 1
-)
-
-setlocal enabledelayedexpansion
-SET list=
-for /F "skip=1 tokens=1 delims= " %%i in ('&UC4RB_CMD#') do (
-	if "!list!" == "" (
-		set list=%%i
-	) else (
-		set list=!list!,%%i
-	)
-)
-
-echo UC4RB_K8S_RES_LIST::= %list%
-endlocal
 
 !------------------------------------------Check error level --------------------------------------------------------------------------------------------------------
 : INC PCK.AUTOMIC_KUBERNETES.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
@@ -216,22 +198,7 @@ endlocal
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI><![CDATA[:SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
-:SET &UC4RB_K8S_RES_LIST# = ""
-
-:IF &STATUS# EQ 0
-:    SET &HND# = PREP_PROCESS_REPORT("JOBS",, "REP","UC4RB_K8S_*","COL=DELIMITER", 'DELIMITER=*::=*')
-:    PROCESS &HND#
-:         SET &KEY# = GET_PROCESS_LINE(&HND#,1)
-:         SET &VALUE# = GET_PROCESS_LINE(&HND#,2)
-:         IF &KEY# = "UC4RB_K8S_RES_LIST"
-:                  SET &UC4RB_K8S_RES_LIST# = "&VALUE#"
-:         ENDIF
-:   ENDPROCESS
-:   CLOSE_PROCESS &HND#
-:ENDIF
-
-:PUBLISH &UC4RB_K8S_RES_LIST#,,"WORKFLOW"]]></OSCRI>
+<OSCRI/>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>
