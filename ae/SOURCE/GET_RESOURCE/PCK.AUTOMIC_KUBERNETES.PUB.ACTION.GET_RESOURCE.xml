@@ -480,11 +480,11 @@ PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
 AE logs will be displayed in the AE report.
 
 = Example =
-* Resource Type:                       Pods
-* Sort By:                                   .status.containerStatuses[0].restartCount	
-*Selector:                                   app=spartan	
-* Field Selector:                        status.phase=Running
-* Other Filtering:                       -o jsonpath={.items..metadata.name}
+- Resource Type:                       Pods
+- Sort By:                                   .status.containerStatuses[0].restartCount	
+- Selector:                                   app=spartan	
+- Field Selector:                        status.phase=Running
+- Other Filtering:                       -o jsonpath={.items..metadata.name}
 
 = Sample Command=
 kubectl get pods --server=https://192.168.41.155:6443 --certificate-authority="D:\Git Package\ca.crt" --sort-by ".status.containerStatuses[0].restartCount" --field-selector "status.phase=Running"--selector "app=spartan" -o jsonpath={.items..metadata.name}

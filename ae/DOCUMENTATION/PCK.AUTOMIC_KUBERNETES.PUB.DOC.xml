@@ -17,20 +17,20 @@ Kubernetes is an open-source system for managing containerized applications. It 
 =Setup=
 * Oracle JRE 1.7 must be installed on Agent OS and "java" must be set as executable on the same.
 * The Agent should be able to access Kubernetes Server URL.
-* Path to Kubectl.exe should be set in PATH environment Variable.
+* Path to Kubectl.exe should be set in PATH Environment Variable.
 
 =Variables=
 (none)
 
 =Common Input=
 -Server URL:                                      Specify address and port of the Kubernetes server E.g. https://192.168.41.155:6443
--Username:                                        Username used for Kubernetes connections. E.g. Admin
+-Username:                                       Username used for Kubernetes connections. E.g. Admin
 -Password:                                          Password used for Kubernetes connections. 
--Kube Config Path:                             Specify path to the kubeconfig file to use for CLI requests. E.g. /home/username/.kube/config
+-Kube Config Path:                             Specify the path to the kubeconfig file to use for CLI requests. E.g. /home/username/.kube/config
 -Kube Config Context:                         Specify the name of the kubeconfig context to use. E.g. minikube
 -Cluster:                                               Specify the name of the kubeconfig cluster to use. E.g. kubernetes
 -Skip TLS Verification:                         If Yes, the server's certificate will not be checked for validity. E.g. Yes, No
--Client Certificate Path:                        Specify path to a client certificate file for the certificate authority. E.g. /home/username/kubernetes/ca.cert
+-Client Certificate Path:                        Specify the path to a client certificate file for the certificate authority. E.g. /home/username/kubernetes/ca.cert
 
 =Actions=
 Following actions are supported.
