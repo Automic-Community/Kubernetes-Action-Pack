@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBI name="PCK.AUTOMIC_KUBERNETES.PUB.INCLUDE.CONNECTION_PARAM_LOG">
 <HEADER state="1">
-<Title>connection parameter logging</Title>
+<Title>Connection parameter logging</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <OH_SubType/>
