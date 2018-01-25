@@ -1,0 +1,73 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        get_resource
+Test Template     Get Resource Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    ResourceType      SortBy        Selector                FieldSelector        OtherFiltering
+Get Resource while asserting all the optional fields
+                      [Tags]    main_scenarios
+                      OK        Services          ${EMPTY}      ${EMPTY}                ${EMPTY}             ${EMPTY}
+
+Get Resource while providing all the inputs and other filter as empty
+                      OK        Pods              ${Sort_By}    ${Resource_Selector}    ${Field_Selector}    ${EMPTY}
+
+Get Resource with Invalid Resource Type value
+                      NOK       Invalid           ${Sort_By}    ${Resource_Selector}    ${Field_Selector}    ${Other_Filtering}
+
+Get Resource with Invalid Sort By Value
+                      NOK       Pods              Invalid       ${Resource_Selector}    ${Field_Selector}    ${Other_Filtering}
+
+Get Resource with Invalid selector value
+                      NOK       Pods              ${Sort_By}    Invalid                 ${Field_Selector}    ${Other_Filtering}
+
+Get Resource with Invalid Field Selector value
+                      NOK       Pods              ${Sort_By}    ${Resource_Selector}    Invalid              ${Other_Filtering}
+
+Get Resource with Invalid other filtering value
+                      NOK       Pods              ${Sort_By}    ${EMPTY}                ${EMPTY}             Invalid
+
+Assert Resource Type as mandatory field
+                      NOK       ${EMPTY}          ${Sort_By}    ${Resource_Selector}    ${Field_Selector}    ${Other_Filtering}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "GET RESOURCE"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Get Resource Template
+    [Arguments]    ${OK_NOK}    ${ResourceType}    ${SortBy}    ${Selector}    ${FieldSelector}    ${OtherFiltering}
+    [Documentation]    This test executes the Get Resource action.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK/FAULT_OTHER. Value of this variable should be OK, NOK.
+    ...    -${ResourceType}: This field specifies type of the resources to get.
+    ...    -${SortBy}: This field specifies order of sorting.
+    ...    -${Selector}: This field specifies selectors to list only matching resources.
+    ...    -${FieldSelector}: This field specifies field specific selectors to list only matching resources.
+    ...    -${OtherFiltering}: This field specifies any kind of filtering which will be passed to -o jsonpath parameter.
+    Generate String
+    Init Action    ${_GET_RESOURCE_ACTION}
+    Connect to Kubenetes
+    Run Keyword If    '${ResourceType}' == 'Invalid'    Action Set    &UC4RB_K8S_RES_TYPE#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_RES_TYPE#    ${ResourceType}
+    Run Keyword If    '${SortBy}' == 'Invalid'    Action Set    &UC4RB_K8S_SORT_BY#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_SORT_BY#    ${SortBy}
+    Run Keyword If    '${Selector}' == 'Invalid'    Action Set    &UC4RB_K8S_SLCTR#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_SLCTR#    ${Selector}
+    Run Keyword If    '${FieldSelector}' == 'Invalid'    Action Set    &UC4RB_K8S_FLD_SLCTR#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_FLD_SLCTR#    ${FieldSelector}
+    Run Keyword If    '${OtherFiltering}' == 'Invalid'    Action Set    &UC4RB_K8S_OTHER_FIL#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_OTHER_FIL#    ${OtherFiltering}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE IF    '${OK_NOK}' == 'NOK'    Assert Failure
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_K8S_RES_LIST#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_K8S_RES_LIST#
+
+Teardown
+    Log    *******End Test "GET RESOURCE"*******
