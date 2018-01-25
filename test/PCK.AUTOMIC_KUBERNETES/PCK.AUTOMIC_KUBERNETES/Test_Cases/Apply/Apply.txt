@@ -2,7 +2,7 @@
 Suite Setup       Startup
 Suite Teardown    Teardown
 Force Tags        apply_scenarios
-Test Template     Apply Resource Template
+Test Template     Apply Template
 Library           com.automic.robot.itpa.ItpaLibrary
 Library           String
 Library           DateTime
@@ -11,22 +11,22 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    FileLocation                  AdvancedOptions
+*** Test Cases ***    OK_NOK    FileLocation        AdvancedOptions
 Apply with valid File Location and not giving Advanced Options
                       [Tags]    main_scenarios
-                      OK        ${File_Locatiom}              ${EMPTY}
+                      OK        ${File_Locatiom}    ${EMPTY}
 
 Apply with valid File Location and giving Advanced Options
-                      OK        C:\\My New Deployment.YAML    ${Advanced_Options}
+                      OK        ${File_Locatiom}    ${Advanced_Options}
 
 Apply with Invalid File Location
-                      NOK       Invalid                       ${Advanced_Options}
+                      NOK       Invalid             ${Advanced_Options}
 
 Apply with Invalid Advanced Options
-                      NOK       ${File_Locatiom}              Invalid
+                      NOK       ${File_Locatiom}    Invalid
 
 Assert File Location as mandatory field
-                      NOK       ${EMPTY}                      ${Advanced_Options}
+                      NOK       ${EMPTY}            ${Advanced_Options}
 
 *** Keywords ***
 Startup
