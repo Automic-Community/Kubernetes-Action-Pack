@@ -16,7 +16,7 @@ Get Resource while asserting all the optional fields
                       [Tags]    main_scenarios
                       OK        Services          ${EMPTY}      ${EMPTY}                ${EMPTY}             ${EMPTY}
 
-Get Resource while providing all the inputs
+Get Resource while providing all the inputs and other filter as empty
                       OK        Pods              ${Sort_By}    ${Resource_Selector}    ${Field_Selector}    ${EMPTY}
 
 Get Resource with Invalid Resource Type value
