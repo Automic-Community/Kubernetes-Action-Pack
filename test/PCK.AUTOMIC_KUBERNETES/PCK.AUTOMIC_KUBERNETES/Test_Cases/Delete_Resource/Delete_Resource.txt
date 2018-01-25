@@ -31,10 +31,10 @@ Delete Resource with Invalid Other Options
 Delete Resource with already deleted Resource
                       NOK       deployment        nginx-deployment     ${EMPTY}
 
-Assert File Location as Resource Type
+Assert Resource Type as Mandatory Field
                       NOK       ${EMPTY}          nginx-deployment     --timeout=0s
 
-Assert File Location as Resource Name
+Assert Resource Name as Mandatory Field
                       NOK       deployment        ${EMPTY}             --timeout=0s
 
 *** Keywords ***
