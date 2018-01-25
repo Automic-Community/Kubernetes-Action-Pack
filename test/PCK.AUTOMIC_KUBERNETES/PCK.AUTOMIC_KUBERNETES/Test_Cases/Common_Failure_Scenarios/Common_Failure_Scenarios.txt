@@ -36,6 +36,7 @@ Assertion with Skip TLS Verification as NO
 
 Assertion with Invalid Client Certificate Path
 
+
                       NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    YES                    Invalid                       ${File_Locatiom}    ${Advanced_Options}
 
 
