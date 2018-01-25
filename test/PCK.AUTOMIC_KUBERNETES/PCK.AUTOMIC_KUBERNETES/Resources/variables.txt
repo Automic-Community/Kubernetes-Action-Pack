@@ -14,3 +14,4 @@ ${Client_Certificate_Path}    /home/username/kubernetes/ca.cert
 #----Create Resource----------------------------------------------------------------------------------------
 ${File_Location}    C:\deployment.yaml
 ${Advanced_Options}    --dry-run=false
+>>>>>>> develop
