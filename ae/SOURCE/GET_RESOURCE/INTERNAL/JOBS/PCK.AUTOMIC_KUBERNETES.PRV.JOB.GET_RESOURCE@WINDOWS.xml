@@ -187,6 +187,11 @@
 : PRINT "Command executed :: &UC4RB_CMD#"
 
 &UC4RB_CMD#
+IF %ERRORLEVEL% NEQ 0 (
+  echo "Please verify the inputs provided."
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR
+  exit 1
+)
 
 setlocal enabledelayedexpansion
 SET list=
