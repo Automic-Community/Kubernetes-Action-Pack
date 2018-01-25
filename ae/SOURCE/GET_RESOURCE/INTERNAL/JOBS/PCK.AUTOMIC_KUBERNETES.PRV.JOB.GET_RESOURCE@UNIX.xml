@@ -145,6 +145,12 @@
 
 !------------------------------------------ Running GET RESOURCE command -------------------------------------------------------------------------------------------
 
+
+! Output file
+: SET &AGENT_TEMPDIR# = GET_VAR('UC_EX_PATH_TEMP', &AGENT#)
+: SET &UC4RB_TEMP_FILE_PATH# = STR_CAT(&AGENT_TEMPDIR#,"result-&$RUNID#.txt")
+
+
 ! Resource Type
 : SET &UC4RB_ESCAPED_STRING# = &UC4RB_K8S_RES_TYPE#
 : INC PCK.AUTOMIC_KUBERNETES.PUB.INCLUDE.ESCAPE_ARG_VALUE@UNIX
@@ -180,7 +186,18 @@
 
 : PRINT "Command executed :: &UC4RB_CMD#"
 
-  &UC4RB_CMD#
+&UC4RB_CMD#
+if [ $? -gt 0  ]; then
+  echo "Please verify the inputs provided."
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR
+  exit 1
+fi
+
+&UC4RB_CMD# > &UC4RB_TEMP_FILE_PATH#
+
+resource_list=`awk 'NR!=1{print $1}'< &UC4RB_TEMP_FILE_PATH# | paste -s -d, -`
+echo "UC4RB_K8S_RES_LIST::=$resource_list"
+rm &UC4RB_TEMP_FILE_PATH#
 
 !------------------------------------------Check error level --------------------------------------------------------------------------------------------------------
 : INC PCK.AUTOMIC_KUBERNETES.PUB.INCLUDE.CHECK_JOBSTATUS@UNIX
@@ -193,7 +210,22 @@
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI/>
+<OSCRI><![CDATA[:SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
+:SET &UC4RB_K8S_RES_LIST# = ""
+
+:IF &STATUS# EQ 0
+:    SET &HND# = PREP_PROCESS_REPORT("JOBS",, "REP","UC4RB_K8S_*","COL=DELIMITER", 'DELIMITER=*::=*')
+:    PROCESS &HND#
+:         SET &KEY# = GET_PROCESS_LINE(&HND#,1)
+:         SET &VALUE# = GET_PROCESS_LINE(&HND#,2)
+:         IF &KEY# = "UC4RB_K8S_RES_LIST"
+:                  SET &UC4RB_K8S_RES_LIST# = "&VALUE#"
+:         ENDIF
+:   ENDPROCESS
+:   CLOSE_PROCESS &HND#
+:ENDIF
+
+:PUBLISH &UC4RB_K8S_RES_LIST#,,"WORKFLOW"]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>

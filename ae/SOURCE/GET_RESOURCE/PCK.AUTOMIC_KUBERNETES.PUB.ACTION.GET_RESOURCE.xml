@@ -61,7 +61,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -143,7 +143,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -225,7 +225,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -294,7 +294,7 @@
 <UC4RB_K8S_CLUSTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CLUSTER#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONFIG_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONFIG_PATH#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 <UC4RB_K8S_CONTEXTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_CONTEXT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
-<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_PASSWORD#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SKIP_CERT#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_USERNAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PUB.PROMPTSET.CONNECTION_DETAILS"/>
 </PRPTBOX>
@@ -391,7 +391,7 @@
 <UC4RB_K8S_CLUSTERs.00 altview="0" haslist="0"/>
 <UC4RB_K8S_BASE_URLs.00 altview="0" haslist="0"/>
 <UC4RB_K8S_USERNAMEs.00 altview="0" haslist="0"/>
-<UC4RB_K8S_PASSWORDs.00 altview="0" haslist="0">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</UC4RB_K8S_PASSWORDs.00>
+<UC4RB_K8S_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_K8S_PASSWORDs.00>
 <UC4RB_K8S_SKIP_CERTs.00 altview="0" haslist="0">NO</UC4RB_K8S_SKIP_CERTs.00>
 <UC4RB_K8S_CERT_PATHs.00 altview="0" haslist="0"/>
 </PRPTBOX>
@@ -448,7 +448,7 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_CA_VERACODE.PUB.ACTION.GET_RESOURCE
+PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
 
 = General description =
  This action will fetch resource(s) in Kubernetes according to type and filters.
@@ -457,17 +457,17 @@ PCK.AUTOMIC_CA_VERACODE.PUB.ACTION.GET_RESOURCE
 * When non-existing Resource type is provided.
 
 = Inputs =
-* Resource Type*:                      Specify the type of the resources to get. E.g. Pods
-* Sort By:                                   Specify the order of sorting. E.g. .status.containerStatuses[0].restartCount	
-* Selector:                                  Specify selectors to list only matching resources. E.g. app=spartan	
-* Field Selector:                         Specify field specific selectors to list only matching resources. E.g. status.phase=Running
-* Other Filtering:                       Specify any kind of filtering which will be passed to -o jsonpath parameter. E.g 	-o jsonpath={.items..metadata.name}
+- Resource Type*:                      Specify the type of the resources to get. E.g. Pods
+- Sort By:                                   Specify the order of sorting. E.g. .status.containerStatuses[0].restartCount	
+- Selector:                                  Specify selectors to list only matching resources. E.g. app=spartan	
+- Field Selector:                         Specify field specific selectors to list only matching resources. E.g. status.phase=Running
+- Other Filtering:                       Specify any kind of filtering which will be passed to -o jsonpath parameter. E.g 	-o jsonpath={.items..metadata.name}
 
 = Behavior =
 (none)
 
 =Return Value=
-(none)
+ &UC4RB_K8S_RES_LIST#:              List of resources available.
 
 = Outputs =
 * Return code is 0 in case of success.
@@ -480,14 +480,54 @@ PCK.AUTOMIC_CA_VERACODE.PUB.ACTION.GET_RESOURCE
 AE logs will be displayed in the AE report.
 
 = Example =
-* Resource Type:                      Specify the type of the resources to get. E.g. Pods
-* Sort By:                                   Specify the order of sorting. E.g. .status.containerStatuses[0].restartCount	
-*Selector:                                  Specify selectors to list only matching resources. E.g. app=spartan	
-* Field Selector:                         Specify field specific selectors to list only matching resources. E.g. status.phase=Running
-* Other Filtering:                       Specify any kind of filtering which will be passed to -o jsonpath parameter. E.g 	-o jsonpath={.items..metadata.name}
+* Resource Type:                       Pods
+* Sort By:                                   .status.containerStatuses[0].restartCount	
+*Selector:                                   app=spartan	
+* Field Selector:                        status.phase=Running
+* Other Filtering:                       -o jsonpath={.items..metadata.name}
 
 = Sample Command=
-get pods --server=https://192.168.41.155:6443 --certificate-authority="D:\Git Package\ca.crt" --sort-by ".status.containerStatuses[0].restartCount" --field-selector "status.phase=Running"--selector "app=spartan" -o jsonpath={.items..metadata.name}
+kubectl get pods --server=https://192.168.41.155:6443 --certificate-authority="D:\Git Package\ca.crt" --sort-by ".status.containerStatuses[0].restartCount" --field-selector "status.phase=Running"--selector "app=spartan" -o jsonpath={.items..metadata.name}
+
+= Resource types available =
+
+all
+certificatesigningrequests (aka 'csr'
+clusterrolebindings
+clusterroles
+componentstatuses (aka 'cs')
+configmaps (aka 'cm')
+controllerrevisions
+cronjobs
+customresourcedefinition (aka 'crd')
+daemonsets (aka 'ds')
+deployments (aka 'deploy')
+endpoints (aka 'ep')
+events (aka 'ev')
+horizontalpodautoscalers (aka 'hpa')
+ingresses (aka 'ing')
+jobs
+limitranges (aka 'limits')
+namespaces (aka 'ns')
+networkpolicies (aka 'netpol')
+nodes (aka 'no')
+persistentvolumeclaims (aka 'pvc')
+persistentvolumes (aka 'pv')
+poddisruptionbudgets (aka 'pdb')
+podpreset
+pods (aka 'po')
+podsecuritypolicies (aka 'psp')
+podtemplates
+replicasets (aka 'rs')
+replicationcontrollers (aka 'rc')
+resourcequotas (aka 'quota')
+rolebindings
+roles
+secrets
+serviceaccounts (aka 'sa')
+services (aka 'svc')
+statefulsets (aka 'sts')
+storageclasses (aka 'sc')
               
 ]]></DOC>
 </DOCU_Docu>
