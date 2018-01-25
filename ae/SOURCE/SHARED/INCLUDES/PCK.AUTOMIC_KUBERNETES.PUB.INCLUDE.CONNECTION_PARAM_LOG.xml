@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBI name="PCK.AUTOMIC_KUBERNETES.PUB.INCLUDE.CONNECTION_PARAM_LOG">
 <HEADER state="1">
-<Title>connection parameter logging</Title>
+<Title>Connection parameter logging</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <OH_SubType/>
@@ -17,11 +17,6 @@
 !Username
 :SET &UC4RB_LOGGING_PARAMETER# = "Username"
 :SET &UC4RB_LOGGING_PARAMETER_VAL# = &UC4RB_K8S_USERNAME#
-:INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
-
-!Password
-:SET &UC4RB_LOGGING_PARAMETER# = "Password"
-:SET &UC4RB_LOGGING_PARAMETER_VAL# = &UC4RB_K8S_PASSWORD#
 :INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
 
 !Kube Config Path
