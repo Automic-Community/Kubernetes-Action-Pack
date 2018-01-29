@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentType attachedToTarget="true">
+  <Name>Kubernetes</Name>
+  <DefaultDeploymentTargetType>Kubernetes</DefaultDeploymentTargetType>
+  <DynamicProperties>
+    <Property name="/kubernetes/connection/kube_config_path" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/kube_config_path}</Value>
+    </Property>
+	<Property name="/kubernetes/connection/kube_config_context" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/kube_config_context}</Value>
+	</Property>
+    <Property name="/kubernetes/connection/cluster" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/cluster}</Value>
+    </Property>
+	<Property name="/kubernetes/connection/server_url" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/server_url}</Value>
+    </Property>
+    <Property name="/kubernetes/connection/username" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/username}</Value>
+    </Property>
+	<Property name="/kubernetes/connection/password" protected="false" highlighted="false" type="Protected" allowCustomValues="false">
+      <Value>{@target/custom/password}</Value>
+    </Property>
+	<Property name="/kubernetes/connection/skip_tls_verify" protected="false" highlighted="false" type="SingleChoice" allowCustomValues="false">
+	  <List>No#;#Yes</List>
+      <Value>{@target/custom/skip_tls_verify}</Value>
+    </Property>
+	<Property name="/kubernetes/connection/certificate_path" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/certificate_path}</Value>
+    </Property>
+  </DynamicProperties>
+</ComponentType>
