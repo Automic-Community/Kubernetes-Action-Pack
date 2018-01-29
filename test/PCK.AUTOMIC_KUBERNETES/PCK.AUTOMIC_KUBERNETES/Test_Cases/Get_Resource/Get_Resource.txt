@@ -67,7 +67,6 @@ Get Resource Template
     ...    &UC4RB_K8S_OTHER_FIL#    ${OtherFiltering}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE IF    '${OK_NOK}' == 'NOK'    Assert Failure
-    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_K8S_RES_LIST#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_K8S_RES_LIST#
 
 Teardown
     Log    *******End Test "GET RESOURCE"*******

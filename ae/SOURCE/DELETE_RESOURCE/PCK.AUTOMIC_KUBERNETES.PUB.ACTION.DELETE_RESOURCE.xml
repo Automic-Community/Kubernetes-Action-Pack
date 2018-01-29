@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE">
 <XHEADER state="1">
-<Title>Get Resource</Title>
+<Title>Delete Resource</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -67,14 +67,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<UC4RB_K8S_FLD_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_FLD_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_OTHER_FILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_FIL#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">Services</UC4RB_K8S_RES_TYPEs.00>
-<UC4RB_K8S_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_SORT_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SORT_BY#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
+<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<UC4RB_K8S_OTHER_OPTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_OPTS#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_NAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -105,7 +103,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_RESOURCE" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_KUBERNETES.PRV.JOB.GET_RESOURCE@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="DELETE_RESOURCE" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_KUBERNETES.PRV.JOB.DELETE_RESOURCE@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -149,14 +147,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<UC4RB_K8S_FLD_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_FLD_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_OTHER_FILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_FIL#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">Services</UC4RB_K8S_RES_TYPEs.00>
-<UC4RB_K8S_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_SORT_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SORT_BY#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
+<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<UC4RB_K8S_OTHER_OPTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_OPTS#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_NAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -187,7 +183,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_RESOURCE" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_KUBERNETES.PRV.JOB.GET_RESOURCE@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="DELETE_RESOURCE" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_KUBERNETES.PRV.JOB.DELETE_RESOURCE@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -231,14 +227,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<UC4RB_K8S_FLD_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_FLD_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_OTHER_FILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_FIL#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">Services</UC4RB_K8S_RES_TYPEs.00>
-<UC4RB_K8S_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_SORT_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SORT_BY#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
+<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<UC4RB_K8S_OTHER_OPTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_OPTS#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_NAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -300,14 +294,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">
-<UC4RB_K8S_FLD_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_FLD_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_OTHER_FILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_FIL#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE">Services</UC4RB_K8S_RES_TYPEs.00>
-<UC4RB_K8S_SLCTRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SLCTR#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
-<UC4RB_K8S_SORT_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_SORT_BY#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE"/>
+<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE">
+<UC4RB_K8S_OTHER_OPTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_OTHER_OPTS#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_NAME#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
+<UC4RB_K8S_RES_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_K8S_RES_TYPE#" promptsetname="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -397,14 +389,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.GET_RESOURCE" prptmode="1">
-<UC4RB_K8S_RES_TYPEs.00 altview="0" haslist="0">Services</UC4RB_K8S_RES_TYPEs.00>
-<UC4RB_K8S_SORT_BYs.00 altview="0" haslist="0"/>
-<UC4RB_K8S_SLCTRs.00 altview="0" haslist="0"/>
-<UC4RB_K8S_FLD_SLCTRs.00 altview="0" haslist="0"/>
-<UC4RB_K8S_OTHER_FILs.00 altview="0" haslist="0"/>
+<node content="1" id="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_KUBERNETES.PRV.PROMPTSET.DELETE_RESOURCE" prptmode="1">
+<UC4RB_K8S_RES_TYPEs.00 altview="0" haslist="0"/>
+<UC4RB_K8S_RES_NAMEs.00 altview="0" haslist="0"/>
+<UC4RB_K8S_OTHER_OPTSs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -448,26 +438,24 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
+PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE
 
 = General description =
- This action will fetch resource(s) in Kubernetes according to type and filters.
+This action deletes the resource in Kubernetes. 
 
 = Failure Conditions =
-* When non-existing Resource type is provided.
+* If the user provides a resource name that does not exist or already deleted.
 
 = Inputs =
-- Resource Type*:                      Specify the type of the resources to get. E.g. Pods
-- Sort By:                                   Specify the order of sorting. E.g. .status.containerStatuses[0].restartCount	
-- Selector:                                  Specify selectors to list only matching resources. E.g. app=spartan	
-- Field Selector:                         Specify field specific selectors to list only matching resources. E.g. status.phase=Running
-- Other Filtering:                       Specify any kind of filtering which will be passed to -o jsonpath parameter. E.g 	-o jsonpath={.items..metadata.name}
+- Resource Type*:               Provide the name of the team you are creating. It is case sensitive. E.g. nodes
+- Resource Name*:               Provide usernames of members in comma separated manner. E.g. Spartan
+- Other options:                Specify any kind of options which can be passing into the command. E.g. --include-uninitialized
 
 = Behavior =
 (none)
 
 =Return Value=
- (none)
+(noe)
 
 = Outputs =
 * Return code is 0 in case of success.
@@ -480,55 +468,12 @@ PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
 AE logs will be displayed in the AE report.
 
 = Example =
-- Resource Type:                       Pods
-- Sort By:                                   .status.containerStatuses[0].restartCount	
-- Selector:                                   app=spartan	
-- Field Selector:                        status.phase=Running
-- Other Filtering:                       -o jsonpath={.items..metadata.name}
+- Resource Type:              nodes
+- Resource Name:             Spartan
+- Other options:             --include-uninitialized
 
-= Sample Command=
-kubectl get pods --server=https://192.168.41.155:6443 --certificate-authority="D:\Git Package\ca.crt" --sort-by ".status.containerStatuses[0].restartCount" --field-selector "status.phase=Running"--selector "app=spartan" -o jsonpath={.items..metadata.name}
-
-= Resource types available =
-
-all
-certificatesigningrequests (aka 'csr'
-clusterrolebindings
-clusterroles
-componentstatuses (aka 'cs')
-configmaps (aka 'cm')
-controllerrevisions
-cronjobs
-customresourcedefinition (aka 'crd')
-daemonsets (aka 'ds')
-deployments (aka 'deploy')
-endpoints (aka 'ep')
-events (aka 'ev')
-horizontalpodautoscalers (aka 'hpa')
-ingresses (aka 'ing')
-jobs
-limitranges (aka 'limits')
-namespaces (aka 'ns')
-networkpolicies (aka 'netpol')
-nodes (aka 'no')
-persistentvolumeclaims (aka 'pvc')
-persistentvolumes (aka 'pv')
-poddisruptionbudgets (aka 'pdb')
-podpreset
-pods (aka 'po')
-podsecuritypolicies (aka 'psp')
-podtemplates
-replicasets (aka 'rs')
-replicationcontrollers (aka 'rc')
-resourcequotas (aka 'quota')
-rolebindings
-roles
-secrets
-serviceaccounts (aka 'sa')
-services (aka 'svc')
-statefulsets (aka 'sts')
-storageclasses (aka 'sc')
-              
+=Sample Command=
+kubectl delete service service1 
 ]]></DOC>
 </DOCU_Docu>
 </JOBP>

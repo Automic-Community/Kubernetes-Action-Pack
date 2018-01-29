@@ -11,6 +11,11 @@ ${Kube_Config_Path}    /home/username/.kube/config
 ${Kube_Config_Context}    minikube
 ${Kube_Cluster}    kubernetes
 ${Client_Certificate_Path}    /home/username/kubernetes/ca.cert
+#----Get Resource----------------------------------------------------------------------------------------
+${Sort_By}        .status.containerStatuses[0].restartCount
+${Resource_Selector}    app=nginx
+${Field_Selector}    status.phase=Running
+${Other_Filtering}    -o jsonpath={.items..metadata.name}
 #----Create Resource----------------------------------------------------------------------------------------
 ${File_Location}    C:\deployment.yaml
 ${Advanced_Options}    --dry-run=false
