@@ -12,6 +12,9 @@
 	  <Property name="cluster" displayName="Cluster" mode="EDITABLE" type="SingleLineText">
         <Description>Specify the name of the kubeconfig cluster to use. E.g. kubernetes</Description>
       </Property>
+	  <Property name="namespace" displayName="Namespace" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify the name of the namespace to use. E.g. dev</Description>
+      </Property>
 	  <Property name="server_url" displayName="Server URL" mode="EDITABLE" type="SingleLineText">
         <Description>Specify address and port of the Kubernetes server. E.g. https://192.168.41.155:6443</Description>
       </Property>

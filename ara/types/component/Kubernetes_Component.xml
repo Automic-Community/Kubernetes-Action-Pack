@@ -12,6 +12,9 @@
     <Property name="/kubernetes/connection/cluster" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
       <Value>{@target/custom/cluster}</Value>
     </Property>
+	<Property name="/kubernetes/connection/namespace" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
+      <Value>{@target/custom/namespace}</Value>
+    </Property>
 	<Property name="/kubernetes/connection/server_url" protected="false" highlighted="false" type="SingleLineText" allowCustomValues="false">
       <Value>{@target/custom/server_url}</Value>
     </Property>
