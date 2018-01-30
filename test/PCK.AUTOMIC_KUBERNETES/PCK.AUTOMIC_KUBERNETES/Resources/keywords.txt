@@ -112,6 +112,6 @@ Connect to Kubenetes
     Action Set    &UC4RB_K8S_CONFIG_PATH#    ${Kube_Config_Path}
     Action Set    &UC4RB_K8S_CONTEXT#    ${Kube_Config_Context}
     Action Set    &UC4RB_K8S_CLUSTER#    ${Kube_Cluster}
+    Action Set    &UC4RB_K8S_NAMESPACE#    ${Name_Space}
     Action Set    &UC4RB_K8S_SKIP_CERT#    YES
     Action Set    &UC4RB_K8S_CERT_PATH#    ${Client_Certificate_Path}
-
