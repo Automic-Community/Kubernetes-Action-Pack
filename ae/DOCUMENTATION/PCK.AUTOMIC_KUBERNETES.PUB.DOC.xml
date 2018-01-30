@@ -29,6 +29,7 @@ Kubernetes is an open-source system for managing containerized applications. It 
 -Kube Config Path:                             Specify the path to the kubeconfig file to use for CLI requests. E.g. /home/username/.kube/config
 -Kube Config Context:                         Specify the name of the kubeconfig context to use. E.g. minikube
 -Cluster:                                               Specify the name of the kubeconfig cluster to use. E.g. kubernetes
+-namespace:                                       Specify the name of the namespace to use. E.g. kubernetes
 -Skip TLS Verification:                         If Yes, the server's certificate will not be checked for validity. E.g. Yes, No
 -Client Certificate Path:                        Specify the path to a client certificate file for the certificate authority. E.g. /home/username/kubernetes/ca.cert
 
@@ -47,7 +48,6 @@ Action Description: This action applies configuration changes to a resource.]]
 
 * Action Name:  PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE
 * Action description: This action will fetch resource(s) in Kubernetes according to type and filters.]]></DOC>
-
 </DOCU_Docu>
 </DOCU>
 </uc-export>
