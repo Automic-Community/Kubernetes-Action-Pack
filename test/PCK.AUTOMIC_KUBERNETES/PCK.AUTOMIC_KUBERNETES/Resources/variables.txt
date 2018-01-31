@@ -11,12 +11,12 @@ ${Kube_Config_Path}    ${EMPTY}
 ${Kube_Config_Context}    ${EMPTY}
 ${Kube_Cluster}    ${EMPTY}
 ${Client_Certificate_Path}    ${EMPTY}
-${Name_Space}     Dev
+${Name_Space}     ${EMPTY}
 #----Get Resource----------------------------------------------------------------------------------------
 ${Sort_By}        .status.containerStatuses[0].restartCount
 ${Resource_Selector}    app=nginx
 ${Field_Selector}    status.phase=Running
 ${Other_Filtering}    -o jsonpath={.items..metadata.name}
 #----Create Resource----------------------------------------------------------------------------------------
-${File_Location}    C:\deployment.yaml
+${File_Location}    C:\\deployment.yaml
 ${Advanced_Options}    --dry-run=false
