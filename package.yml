@@ -16,4 +16,4 @@ binaries:
       - name: COMPONENT#KUBERNETES#2 
         type: TEXT
         path: ara/types/component/Kubernetes_Component.xml
-        version: 1.1.0	
+        version: 1.1.0
