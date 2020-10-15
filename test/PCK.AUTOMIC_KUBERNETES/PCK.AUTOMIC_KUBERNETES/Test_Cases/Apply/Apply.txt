@@ -1,0 +1,54 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        apply_scenarios
+Test Template     Apply Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    FileLocation        AdvancedOptions
+Apply with valid File Location and not giving Advanced Options
+                      [Tags]    main_scenarios
+                      OK        ${File_Locatiom}    ${EMPTY}
+
+Apply with valid File Location and giving Advanced Options
+                      OK        ${File_Locatiom}    ${Advanced_Options}
+
+Apply with Invalid File Location
+                      NOK       Invalid             ${Advanced_Options}
+
+Apply with Invalid Advanced Options
+                      NOK       ${File_Locatiom}    Invalid
+
+Assert File Location as mandatory field
+                      NOK       ${EMPTY}            ${Advanced_Options}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "APPLY"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Apply Template
+    [Arguments]    ${OK_NOK}    ${FileLocation}    ${AdvancedOptions}
+    [Documentation]    This test executes the Apply action.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK/FAULT_OTHER. Value of this variable should be OK, NOK.
+    ...    -${FileLocation}: This field specifies YAML file including full path.
+    ...    -${AdvancedOptions}: This field specifies other options which will be used during resource creation.
+    Generate String
+    Init Action    ${APPLY}
+    Connect to Kubenetes
+    Run Keyword If    '${FileLocation}' == 'Invalid'    Action Set    &UC4RB_K8S_FILE_PATH#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_FILE_PATH#    ${FileLocation}
+    Run Keyword If    '${AdvancedOptions}' == 'Invalid'    Action Set    &UC4RB_K8S_ADV_OPT#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_ADV_OPT#    ${AdvancedOptions}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE IF    '${OK_NOK}' == 'NOK'    Assert Failure
+
+Teardown
+    Log    *******End Test "APPLY"*******

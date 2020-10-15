@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeploymentTargetType>
+  <Name>Kubernetes</Name>
+  <Properties>
+    <Group name="connection_details" displayName="Connection Details">
+	  <Property name="kube_config_path" displayName="Kube Config Path" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify path to the kubeconfig file to use for CLI requests. E.g. /home/username/.kube/config</Description>
+      </Property>
+	  <Property name="kube_config_context" displayName="Kube Config Context" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify the name of the kubeconfig context to use. E.g. minikube</Description>
+      </Property>
+	  <Property name="cluster" displayName="Cluster" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify the name of the kubeconfig cluster to use. E.g. kubernetes</Description>
+      </Property>
+	  <Property name="namespace" displayName="Namespace" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify the name of the namespace to use. E.g. dev</Description>
+      </Property>
+	  <Property name="server_url" displayName="Server URL" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify address and port of the Kubernetes server. E.g. https://192.168.41.155:6443</Description>
+      </Property>
+	  <Property name="username" displayName="Username" mode="EDITABLE" type="SingleLineText">
+        <Description>Username used for Kubernetes connections. E.g. Admin</Description>
+      </Property>
+	  <Property name="password" displayName="Password" mode="EDITABLE" type="Protected">
+        <Description>Password used for Kubernetes connections. E.g. Passw0rd</Description>
+      </Property>
+	  <Property name="skip_tls_verify" displayName="Skip TLS Verification" mode="EDITABLE" type="SingleChoice">
+		<Defaultvalue>No</Defaultvalue>
+        <List>No#;#Yes</List>
+        <Description>If Yes, the server's certificate will not be checked for validity.</Description>
+      </Property>
+      <Property name="certificate_path" displayName="Client Certificate Path" mode="EDITABLE" type="SingleLineText">
+        <Description>Specify path to a client certificate file for the certificate authority. E.g. /home/username/kubernetes/ca.cert</Description>
+      </Property>
+    </Group>
+  </Properties>
+</DeploymentTargetType>

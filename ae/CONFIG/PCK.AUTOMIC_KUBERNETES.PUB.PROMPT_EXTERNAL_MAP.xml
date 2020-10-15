@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<VARA OVD_VRName="FREI" data_type="STATIC" name="PCK.AUTOMIC_KUBERNETES.PUB.PROMPT_EXTERNAL_MAP" replacementmode="2">
+<HEADER state="1">
+<Title>External mapping for Agent/Login</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType>STATIC</OH_SubType>
+</HEADER>
+<ATTR_VARA state="1">
+<Type>C|Text</Type>
+<lblSource>Static</lblSource>
+<source>STATIC</source>
+<VRName>FREI|Freely selected</VRName>
+<NotFoundErr>0</NotFoundErr>
+<NotFoundDef>1</NotFoundDef>
+<ShareN>0</ShareN>
+<ShareL>0</ShareL>
+<ShareR>0</ShareR>
+<MaxValue_C>1024</MaxValue_C>
+<CheckMax_C>0</CheckMax_C>
+<uppercase>0</uppercase>
+<sortColumn>0</sortColumn>
+<sortDirection>0</sortDirection>
+<HostType/>
+</ATTR_VARA>
+<VARA state="1">
+<Variables>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_BASE_URL#" Value="EXT:/kubernetes/connection/server_url" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_CERT_PATH#" Value="EXT:/kubernetes/connection/certificate_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_CLUSTER#" Value="EXT:/kubernetes/connection/cluster" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_CONFIG_PATH#" Value="EXT:/kubernetes/connection/kube_config_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_CONTEXT#" Value="EXT:/kubernetes/connection/kube_config_context" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_NAMESPACE#" Value="EXT:/kubernetes/connection/namespace" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_PASSWORD#" Value="EXT:/kubernetes/connection/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_SKIP_CERT#" Value="EXT:/kubernetes/connection/skip_tls_verify" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.APPLY/UC4RB_K8S_USERNAME#" Value="EXT:/kubernetes/connection/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_BASE_URL#" Value="EXT:/kubernetes/connection/server_url" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_CERT_PATH#" Value="EXT:/kubernetes/connection/certificate_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_CLUSTER#" Value="EXT:/kubernetes/connection/cluster" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_CONFIG_PATH#" Value="EXT:/kubernetes/connection/kube_config_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_CONTEXT#" Value="EXT:/kubernetes/connection/kube_config_context" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_NAMESPACE#" Value="EXT:/kubernetes/connection/namespace" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_PASSWORD#" Value="EXT:/kubernetes/connection/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_SKIP_CERT#" Value="EXT:/kubernetes/connection/skip_tls_verify" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.CREATE_RESOURCE/UC4RB_K8S_USERNAME#" Value="EXT:/kubernetes/connection/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_BASE_URL#" Value="EXT:/kubernetes/connection/server_url" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_CERT_PATH#" Value="EXT:/kubernetes/connection/certificate_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_CLUSTER#" Value="EXT:/kubernetes/connection/cluster" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_CONFIG_PATH#" Value="EXT:/kubernetes/connection/kube_config_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_CONTEXT#" Value="EXT:/kubernetes/connection/kube_config_context" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_NAMESPACE#" Value="EXT:/kubernetes/connection/namespace" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_PASSWORD#" Value="EXT:/kubernetes/connection/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_SKIP_CERT#" Value="EXT:/kubernetes/connection/skip_tls_verify" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.DELETE_RESOURCE/UC4RB_K8S_USERNAME#" Value="EXT:/kubernetes/connection/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_BASE_URL#" Value="EXT:/kubernetes/connection/server_url" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_CERT_PATH#" Value="EXT:/kubernetes/connection/certificate_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_CLUSTER#" Value="EXT:/kubernetes/connection/cluster" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_CONFIG_PATH#" Value="EXT:/kubernetes/connection/kube_config_path" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_CONTEXT#" Value="EXT:/kubernetes/connection/kube_config_context" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_NAMESPACE#" Value="EXT:/kubernetes/connection/namespace" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_PASSWORD#" Value="EXT:/kubernetes/connection/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_SKIP_CERT#" Value="EXT:/kubernetes/connection/skip_tls_verify" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_KUBERNETES.PUB.ACTION.GET_RESOURCE/UC4RB_K8S_USERNAME#" Value="EXT:/kubernetes/connection/username" Value1="" Value2="" Value3="" Value4=""/>
+</Variables>
+</VARA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</VARA>
+</uc-export>

@@ -1,0 +1,92 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        common_failure_scenarios
+Test Template     Common Failure Scenarios
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    ServerURL         Username        Password                  KubeConfigPath         KubeConfigContext         Cluster            NameSpace        SkipTLSVerification    ClientCertificatePath         FileLocation        AdvancedOptioms
+Assertion with Invalid Server URL
+                      [Tags]    main_scenarios
+                      NOK       Invalid           ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    ${Name_Space}    YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with invalid Username
+                      NOK       ${Server_URL}     Invalid         ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    ${Name_Space}    YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with invalid Password
+                      NOK       ${Server_URL}     ${User_Name}    Invalid                   ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    ${Name_Space}    YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with invalid Kube Config File
+                      NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    Invalid                ${Kube_Config_Context}    ${Kube_Cluster}    ${Name_Space}    YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with invalid Kube Config Context
+                      NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    Invalid                   ${Kube_Cluster}    ${Name_Space}    YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with invalid Cluster
+                      NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    Invalid            ${Name_Space}    YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with invalid Namespace
+                      NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    Invalid          YES                    ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with Skip TLS Verification as NO
+                      NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    ${Name_Space}    NO                     ${Client_Certificate_Path}    ${File_Location}    ${Advanced_Options}
+
+Assertion with Invalid Client Certificate Path
+                      NOK       ${Server_URL}     ${User_Name}    ${Kubernetes_Password}    ${Kube_Config_Path}    ${Kube_Config_Context}    ${Kube_Cluster}    ${Name_Space}    YES                    Invalid                       ${File_Location}    ${Advanced_Options}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "COMMON FAILURE SCENARIOS"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Common Failure Scenarios
+    [Arguments]    ${OK_NOK}    ${ServerURL}    ${Username}    ${Password}    ${KubeConfigPath}    ${KubeConfigContext}
+    ...    ${Cluster}    ${NameSpace}    ${SkipTLSVerification}    ${ClientCertificatePath}    ${FileLocation}    ${AdvancedOptioms}
+    [Documentation]    This test executes the common failure scenarios for action pack with Create Resource action
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK/FAULT_OTHER. Value of this variable should be OK, NOK.
+    ...    -${ServerURL}: This field specifies address and port of the Kubernetes server.
+    ...    -${Username}: This field specifies Username used for Kubernetes connections.
+    ...    -${Password}: This field specifies Password used for Kubernetes connections.
+    ...    -${KubeConfigPath}: This field specifies path to the kubeconfig file to use for CLI requests.
+    ...    -${KubeConfigContext}: This field specifies the name of the kubeconfig context to use.
+    ...    -${Cluster}: This field specifies the name of the kubeconfig cluster to use.
+    ...    -${NameSpace}:This Field Specifies the name of the namespace to use. E.g. dev
+    ...    -${SkipTLSVerification}: This field specifies If Yes, the server's certificate will not be checked for validity.
+    ...    -${ClientCertificatePath}: This field specifies path to a client certificate file for the certificate authority.
+    ...    -${FileLocation}: This field specifies YAML file including full path.
+    ...    -${AdvancedOptioms}: This field specifies other options which will be used during resource creation.
+    Generate String
+    Init Action    ${CREATE_RESOURCE}
+    Run Keyword If    '${ServerURL}' == 'Invalid'    Action Set    &UC4RB_K8S_BASE_URL#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_BASE_URL#    ${ServerURL}
+    Run Keyword If    '${Username}' == 'Invalid'    Action Set    &UC4RB_K8S_USERNAME#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_USERNAME#    ${Username}
+    Run Keyword If    '${Username}' == 'Invalid'    Action Set    &UC4RB_K8S_USERNAME#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_USERNAME#    ${Username}
+    Run Keyword If    '${Password}' == 'Invalid'    Action Set    &UC4RB_K8S_PASSWORD#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_PASSWORD#    ${Password}
+    Run Keyword If    '${KubeConfigPath}' == 'Invalid'    Action Set    &UC4RB_K8S_CONFIG_PATH#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_CONFIG_PATH#    ${KubeConfigPath}
+    Run Keyword If    '${KubeConfigContext}' == 'Invalid'    Action Set    &UC4RB_K8S_CONTEXT#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_CONTEXT#    ${KubeConfigContext}
+    Run Keyword If    '${Cluster}' == 'Invalid'    Action Set    &UC4RB_K8S_CLUSTER#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_CLUSTER#    ${Cluster}
+    Run Keyword If    '${Namespace}' == 'Invalid'    Action Set    &UC4RB_K8S_NAMESPACE#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_NAMESPACE#    ${Namespace}
+    Action Set    &UC4RB_K8S_SKIP_CERT#    ${SkipTLSVerification}
+    Run Keyword If    '${ClientCertificatePath}' == 'Invalid'    Action Set    &UC4RB_K8S_CERT_PATH#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_K8S_CERT_PATH#    ${ClientCertificatePath}
+    Action Set    &UC4RB_K8S_FILE_PATH#    ${FileLocation}
+    Action Set    &UC4RB_K8S_ADV_OPT#    ${AdvancedOptioms}
+    Action Execute
+    Assert Failure
+
+Teardown
+    Log    *******End Test "COMMON FAILURE SCENARIOS"*******

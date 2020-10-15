@@ -1,0 +1,19 @@
+# Package Build Configuration
+name: PCK.AUTOMIC_KUBERNETES
+
+source: ae
+
+# binary object resource mapping will be defined here
+# please add resources here
+binaries: 
+  - object: RESOURCES/PCK.AUTOMIC_KUBERNETES.PRV.CUSTOM_TYPES
+    timestamp: disabled
+    resources:
+      - name: DEPLOYMENTTARGET#KUBERNETES#1 
+        type: TEXT
+        path: ara/types/deploymenttarget/Kubernetes_DepTarget.xml
+        version: 1.1.0
+      - name: COMPONENT#KUBERNETES#2 
+        type: TEXT
+        path: ara/types/component/Kubernetes_Component.xml
+        version: 1.1.0
